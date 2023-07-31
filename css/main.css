@@ -1,0 +1,301 @@
+@charset "uft-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    min-width: 320px;
+}
+/* body.on{
+    overflow: hidden;
+} */
+header{
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #dee6e8;
+}
+header .h_inner{
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 모바일 버튼/메뉴 숨기기 */
+header .h_inner .m_btn,
+header .h_inner .m_gnb
+{
+    display: none;
+}
+header .h_inner h1 a{
+    display: block;
+    width: 94px;
+    height: 44px;
+    background: url(../images/logo.png)no-repeat center center;
+    background-size: cover;
+    text-indent: -99999px;
+}
+header .h_inner .gnb{
+    display: flex;
+}
+header .h_inner .gnb li{
+    margin-left: 53px;
+}
+header .h_inner .gnb li:first-child{
+    margin-left: 0;
+}
+header .h_inner .gnb li a{
+    color: #222;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*main */
+main .visual{
+    width:100%;
+    position: relative;
+}
+main .visual img{
+    width: 100%;
+}
+main .visual .slick-dots li{
+    display: none;
+}
+main .visual .slick-arrow{
+    width: 25px;
+    height: 49px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -99999px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: cover;
+}
+main .visual .slick-prev{
+    background: url(../images/btn_left.png)no-repeat;
+    left: 20px;
+ }
+main .visual .slick-next{
+    background: url(../images/btn_right.png)no-repeat;
+    right: 20px;
+}
+/* search */
+main .search{
+    width: 100%;
+    height: 60px;
+    margin-top: -4px;
+    background: #ff8c97;
+}
+main .search .s_inner{
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    background: #ff8c97;
+}
+main .search .s_inner h2{
+    float: left;
+    margin: 18px 40px 0 0;
+}
+main .search .s_inner .search_Area h3{
+    float: left;
+    margin: 23px 8px 0 0;
+}
+
+main .search .s_inner .area_wrap{
+   float: left;
+   margin-top: 12px;
+}
+main .search .s_inner .area_wrap select{
+    width: 150px;
+    height: 38px;
+    border: none;
+}
+main .search .s_inner .school_Wrap{
+    float: left;
+    margin-left: 23px;
+}
+main .search .s_inner .school_Wrap input{
+    width: 246px;
+    height: 34px;
+    outline: none;
+    margin-top: 12px;
+    background: #fff;
+    text-indent: 15px;
+    border: none;
+}
+main .search .s_inner .school_Wrap .search_Store{
+    float: left;
+}
+main .search .s_inner .school_Wrap .search_Store button{
+    height: 38px;
+    cursor: pointer;
+    background:#FFD47E;
+    border: 1px solid #FFD47E;
+    border: none;
+    padding: 0 28px;
+    color: #222;
+    font-weight: 700;
+    vertical-align: middle;
+}
+/* section1 */
+main .section1{
+    max-width: 1000px;
+    margin: 55px auto 0;
+    overflow: hidden;
+}
+main .section1 .box{
+    width: 33.33%;
+    float: left;
+   
+}
+main .section1 .box img{
+    width: 100%;
+}
+main .section1 .box p{
+    font-size: 15px;
+    text-align: center;
+    color: #555;
+    margin-top: 15px;
+}
+/* section2 */
+main .section2,
+main .section3{
+    max-width: 1000px;
+    margin: 85px auto 0;
+}
+main section h2{
+    text-align: center;
+}
+main section p{
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+    margin: 15px 0 35px;
+}
+main .section2 .model_list{
+    overflow: hidden;
+}
+main .section2 .model_list li{
+    float: left;
+    width: 25%;
+}
+/* section3 */
+main .section3 {
+    overflow: hidden;
+}
+main .section3 .event{
+    width: 30%;
+    float: left;
+}
+main .section3 .event .slick-dots{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+main .section3 .event .slick-dots li{
+    float: left;
+    margin-left: 10px;
+}
+main .section3 .event .slick-dots li button{
+    width: 12px;
+    height: 12px;
+    background: url(../images/btn_eventSlide_off.png)no-repeat;
+    background-size: cover;
+    border: none;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+main .section3 .event .slick-dots .slick-active button{
+    width: 12px;
+    height: 12px;
+    background: url(../images/btn_eventSlide_on.png)no-repeat;
+    background-size: cover;
+}
+main .section3 .event .slick-dots li:first-child{
+    margin-left: 0;
+}
+main .section3 .video{
+    width: 68%;
+    float: right;
+}
+/* section4 */
+main .section4{
+    max-width: 1000px;
+    margin: 22px auto 30px;
+    overflow: hidden;
+    border: 2px solid #75c1e1;
+}
+main .section4 h2{
+    float: left;
+    padding:  0 20px;
+    box-sizing: border-box;
+    background: #62c7f5;
+}
+main .section4 .sns_list{
+    float: right;
+}
+main .section4 .sns_list li{
+    float: left;
+    width: 16.66%;
+    margin-top: 15px;
+}
+/* footer */
+footer{
+    width: 100%;
+    background: #f5f3f4;
+}
+footer .ft_inner{
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 135px;
+    position: relative;
+}
+footer .ft_inner ul.info{
+    padding-top: 25px;
+    display: flex;
+    box-sizing: border-box;
+}
+footer .ft_inner ul.info li{
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+footer .ft_inner ul.info li a{
+    color: #222;
+    font-size: 14px;
+}
+footer .ft_inner ul.info li::before{
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .ft_inner ul.info li:first-child:before{
+    display: none;
+}
+footer .ft_inner address .show{
+    display: none;
+}
+footer .ft_inner address{
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+    line-height: 20px;
+    font-weight: 200;
+}
+footer .ft_inner .copy{
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+.ft_inner .btn_top{
+    position: absolute;
+    right: -100px;
+    top: 0;
+}
